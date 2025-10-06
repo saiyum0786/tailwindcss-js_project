@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/output.css">
+    <title>Web Design</title>
+</head>
+
+<body class="font-inter m-0 overflow-x-hidden">
+
+    <!-- Navbar -->
+    <header class="shadow w-full mb-10 bg-white relative">
+        <nav class="w-full flex items-center justify-between px-4 md:px-8 py-4">
+
+            <!-- Logo -->
+            <img class="w-32 sm:w-36 md:w-40" src="assets/nav-logo.png" alt="Logo">
+
+            <!-- Hamburger button -->
+            <button id="nav-toggle" class="md:hidden inline-flex p-2 rounded-md focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+
+            <!-- Desktop menu -->
+            <ul class="hidden md:flex flex-row gap-8 items-center">
+                <li class="hover:text-primary-green"><a href="">Home</a></li>
+                <li class="hover:text-primary-green"><a href="">Features</a></li>
+                <li class="hover:text-primary-green"><a href="">Community</a></li>
+                <li class="hover:text-primary-green"><a href="">Blog</a></li>
+                <li class="hover:text-primary-green"><a href="">Pricing</a></li>
+                <li>
+                    <a href="/register"
+                        class="bg-primary-green rounded px-4 py-2 text-white border hover:text-primary-green hover:bg-white hover:border hover:border-primary-green">
+                        Register Now
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+
+        <!-- Mobile menu overlay -->
+        <div id="mobile-menu"
+            class="hidden absolute top-full right-0 w-64 bg-white shadow-md flex flex-col p-4 gap-4 md:hidden">
+            <img class="w-32" src="assets/nav-logo.png" alt="Logo">
+            <ul class="flex flex-col gap-4">
+                <li class="hover:text-primary-green"><a href="">Home</a></li>
+                <li class="hover:text-primary-green"><a href="">Features</a></li>
+                <li class="hover:text-primary-green"><a href="">Community</a></li>
+                <li class="hover:text-primary-green"><a href="">Blog</a></li>
+                <li class="hover:text-primary-green"><a href="">Pricing</a></li>
+                <li>
+                    <a href="/register"
+                        class="bg-primary-green rounded px-4 py-2 text-white border hover:text-primary-green hover:bg-white hover:border hover:border-primary-green">
+                        Register Now
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <!-- Slider Section -->
+        <section class="slider-section flex flex-col lg:flex-row px-4 md:px-16 py-8 gap-8 justify-between items-center">
+            <div
+                class="slider-content flex flex-col justify-center gap-4 lg:gap-8 items-center lg:items-start text-center lg:text-left">
+                <div class="slider-title">
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-dark-grey">
+                        Lessons and insights
+                    </h2>
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-primary-green">
+                        from 8 years
+                    </h2>
+                </div>
+                <h5 class="text-sm sm:text-base md:text-lg text-light-grey max-w-md">
+                    Where to grow your business as a photographer: site or social media
+                </h5>
+                <a href="/register"
+                    class="bg-primary-green rounded px-4 py-2 text-white border hover:text-primary-green hover:bg-white hover:border hover:border-primary-green mt-4">
+                    Register Now
+                </a>
+            </div>
+            <div class="slider-image w-full lg:w-auto mt-8 lg:mt-0">
+                <img src="assets/Illustration.png" alt="" class="w-full h-auto object-contain">
+            </div>
+        </section>
+
+        <!-- Our Clients -->
+        <section class="our-clients flex flex-col px-4 md:px-16 py-16 items-center gap-5">
+            <div class="client-text flex flex-col gap-3 text-center">
+                <h3 class="text-2xl font-semibold">Our Clients</h3>
+                <p class="text-light-grey text-xs">We have been working with some Fortune 500+ clients</p>
+            </div>
+            <div class="client-logos flex flex-wrap gap-6 justify-center">
+                <a href=""><img src="assets/client-1.png" alt=""></a>
+                <a href=""><img src="assets/client-2.png" alt=""></a>
+                <a href=""><img src="assets/client-3.png" alt=""></a>
+                <a href=""><img src="assets/client-4.png" alt=""></a>
+                <a href=""><img src="assets/client-5.png" alt=""></a>
+                <a href=""><img src="assets/client-6.png" alt=""></a>
+                <a href=""><img src="assets/client-7.png" alt=""></a>
+            </div>
+        </section>
+
+        <!-- Community Section -->
+        <section class="community-section px-4 md:px-16 py-8 flex flex-col gap-6">
+            <div class="community-text flex flex-col items-center text-center">
+                <div class="community-title text-2xl font-semibold">
+                    <h3>Manage your entire community</h3>
+                    <h3>in a single system</h3>
+                </div>
+                <p class="text-xs text-light-grey mt-2">Who is Nextcent suitable for?</p>
+            </div>
+            <div class="community-cards flex flex-col md:flex-row gap-6 md:gap-4 justify-center md:justify-between">
+                <div
+                    class="card-content p-6 md:p-10 flex flex-col gap-3 items-center rounded-xl shadow-lg w-full md:w-[30%]">
+                    <img class="w-12" src="assets/card-icon.png" alt="">
+                    <h5 class="text-xl text-center font-semibold">Membership Organisation</h5>
+                    <p class="text-xs text-light-grey text-center">Full automation of membership renewals and payments
+                    </p>
+                </div>
+                <div
+                    class="card-content p-6 md:p-10 flex flex-col gap-3 items-center rounded-xl shadow-lg w-full md:w-[30%]">
+                    <img class="w-12" src="assets/card-icon2.png" alt="">
+                    <h5 class="text-xl text-center font-semibold">National Associations</h5>
+                    <p class="text-xs text-light-grey text-center">Full automation of membership renewals and payments
+                    </p>
+                </div>
+                <div
+                    class="card-content p-6 md:p-10 flex flex-col gap-3 items-center rounded-xl shadow-lg w-full md:w-[30%]">
+                    <img class="w-12" src="assets/card-icon3.png" alt="">
+                    <h5 class="text-xl text-center font-semibold">Clubs And Groups</h5>
+                    <p class="text-xs text-light-grey text-center">Full automation of membership renewals and payments
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Learn More Section -->
+        <section class="learn-more flex flex-col lg:flex-row px-4 md:px-16 py-8 gap-8 items-center justify-evenly">
+            <div class="learn-image w-full lg:w-1/2">
+                <img src="assets/learn-more.png" alt="" class="w-full h-auto object-contain">
+            </div>
+            <div class="learn-content w-full lg:w-1/2 flex flex-col gap-5 items-start">
+                <h3 class="text-2xl font-semibold">The unseen of spending three years at Pixelgrade</h3>
+                <p class="text-xs text-light-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+                    velit adipisci, quod tenetur aliquam praesentium esse dicta incidunt repudiandae officiis reiciendis
+                    odit beatae.</p>
+                <a href="/register"
+                    class="bg-primary-green rounded px-5 py-2 text-white border hover:text-primary-green hover:bg-white hover:border hover:border-primary-green">Learn
+                    More</a>
+            </div>
+        </section>
+
+        <!-- Our Numbers -->
+        <section class="our-numbers bg-[#F5F7FA] px-4 md:px-16 py-16">
+            <div class="flex flex-col md:flex-row justify-between gap-8">
+                <div class="numbers-text-content flex flex-col justify-center gap-2">
+                    <h3 class="text-3xl text-dark-grey font-semibold">Helping a local</h3>
+                    <h3 class="text-3xl text-primary-green font-semibold">business reinvent itself</h3>
+                    <p class="text-xs text-dark-grey mt-2">We reached here with our hard work and dedication</p>
+                </div>
+                <div class="numbers-cards flex flex-wrap gap-5 w-full md:w-[50%] justify-between mt-8 md:mt-0">
+                    <div class="numbers-card-content flex items-center gap-5 w-[48%]">
+                        <div class="numbers-image">
+                            <img src="assets/numbers-icon-1.png" alt="">
+                        </div>
+                        <div class="numbers-card-text">
+                            <h5 class="text-xl font-bold text-dark-grey">2,245,341</h5>
+                            <p class="text-xs text-light-grey">Members</p>
+                        </div>
+                    </div>
+                    <div class="numbers-card-content flex items-center gap-5 w-[48%]">
+                        <div class="numbers-image">
+                            <img src="assets/numbers-icon-2.png" alt="">
+                        </div>
+                        <div class="numbers-card-text">
+                            <h5 class="text-xl font-bold text-dark-grey">46,328</h5>
+                            <p class="text-xs text-light-grey">Clubs</p>
+                        </div>
+                    </div>
+                    <div class="numbers-card-content flex items-center gap-5 w-[48%]">
+                        <div class="numbers-image">
+                            <img src="assets/numbers-icon-3.png" alt="">
+                        </div>
+                        <div class="numbers-card-text">
+                            <h5 class="text-xl font-bold text-dark-grey">828,867</h5>
+                            <p class="text-xs text-light-grey">Event Bookings</p>
+                        </div>
+                    </div>
+                    <div class="numbers-card-content flex items-center gap-5 w-[48%]">
+                        <div class="numbers-image">
+                            <img src="assets/numbers-icon-4.png" alt="">
+                        </div>
+                        <div class="numbers-card-text">
+                            <h5 class="text-xl font-bold text-dark-grey">1,926,436</h5>
+                            <p class="text-xs text-light-grey">Payment</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Marketing Section -->
+        <section class="marketing-section px-4 md:px-16 py-16 flex flex-col gap-8">
+            <div class="marketing-title-head flex flex-col items-center gap-3 text-center">
+                <h3 class="text-2xl font-semibold text-dark-grey">Caring is the new marketing</h3>
+                <p class="w-full md:w-[50%] text-xs text-light-grey">The Nextcent blog is the best place to read about
+                    the latest membership insights, trends and more.</p>
+            </div>
+            <div class="marketing-cards flex flex-col md:flex-row gap-8 justify-center md:justify-evenly mt-8">
+                <div class="marketing-card relative mb-7 flex flex-col items-center w-full md:w-[30%]">
+                    <img src="assets/marketing-image-1.png" alt="">
+                    <div
+                        class="card-inner bg-[#F5F7FA] w-[90%] rounded-xl p-5 flex flex-col gap-4 items-center absolute top-[80%] transform -translate-y-1/2 shadow-xl">
+                        <h3 class="text-center text-light-grey font-semibold">Creating Streamlined Safeguarding
+                            Processes with OneRen</h3>
+                        <a href="" class="text-primary-green">Read more →</a>
+                    </div>
+                </div>
+                <div class="marketing-card relative mb-7 flex flex-col items-center w-full md:w-[30%]">
+                    <img src="assets/marketing-image-2.png" alt="">
+                    <div
+                        class="card-inner bg-[#F5F7FA] w-[90%] rounded-xl p-5 flex flex-col gap-4 items-center absolute top-[80%] transform -translate-y-1/2 shadow-xl">
+                        <h3 class="text-center text-light-grey font-semibold">What are your safeguarding
+                            responsibilities and how can you manage them?</h3>
+                        <a href="" class="text-primary-green">Read more →</a>
+                    </div>
+                </div>
+                <div class="marketing-card relative mb-7 flex flex-col items-center w-full md:w-[30%]">
+                    <img src="assets/marketing-image-3.png" alt="">
+                    <div
+                        class="card-inner bg-[#F5F7FA] w-[90%] rounded-xl p-5 flex flex-col gap-4 items-center absolute top-[80%] transform -translate-y-1/2 shadow-xl">
+                        <h3 class="text-center text-light-grey font-semibold">Creating Streamlined Safeguarding
+                            Processes to with OneRen</h3>
+                        <a href="" class="text-primary-green">Read more →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-[#263238] px-4 md:px-16 py-10 text-white flex flex-col md:flex-row justify-between gap-8">
+            <div class="footer-left flex flex-col gap-7 items-start">
+                <img class="w-24" src="assets/Logo.png" alt="">
+                <p class="text-xs">Copyright &copy; 2020 Landify UI Kit. All rights reserved</p>
+                <div class="footer-social flex gap-4">
+                    <a href=""><img src="assets/Social Icons.png" alt=""></a>
+                    <a href=""><img src="assets/Social Icons-1.png" alt=""></a>
+                    <a href=""><img src="assets/Social Icons-2.png" alt=""></a>
+                    <a href=""><img src="assets/Social Icons-3.png" alt=""></a>
+                </div>
+            </div>
+            <div class="footer-right flex flex-col md:flex-row gap-8 md:gap-16 w-full justify-between">
+                <div class="footer-list flex flex-col gap-4">
+                    <h4 class="text-xl font-semibold">Company</h4>
+                    <ul class="text-xs flex flex-col gap-2">
+                        <li class="hover:text-primary-green"><a href="">About us</a></li>
+                        <li class="hover:text-primary-green"><a href="">Blog</a></li>
+                        <li class="hover:text-primary-green"><a href="">Contact us</a></li>
+                        <li class="hover:text-primary-green"><a href="">Pricing</a></li>
+                        <li class="hover:text-primary-green"><a href="">Testimonials</a></li>
+                    </ul>
+                </div>
+                <div class="footer-list flex flex-col gap-4">
+                    <h4 class="text-xl font-semibold">Support</h4>
+                    <ul class="text-xs flex flex-col gap-2">
+                        <li class="hover:text-primary-green"><a href="">Help Center</a></li>
+                        <li class="hover:text-primary-green"><a href="">Terms of Service</a></li>
+                        <li class="hover:text-primary-green"><a href="">Legal</a></li>
+                        <li class="hover:text-primary-green"><a href="">Privacy Policy</a></li>
+                        <li class="hover:text-primary-green"><a href="">Status</a></li>
+                    </ul>
+                </div>
+                <div class="footer-input flex flex-col gap-2">
+                    <h4 class="text-xl font-semibold">Stay up to date</h4>
+                    <div class="relative w-full">
+                        <input class="w-full placeholder-white px-3 py-2 rounded-xl bg-light-grey focus:outline-none"
+                            type="text" placeholder="Your email address">
+                        <span class="absolute right-2 top-2">
+                            <a href=""><img src="assets/send.png" alt=""></a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
